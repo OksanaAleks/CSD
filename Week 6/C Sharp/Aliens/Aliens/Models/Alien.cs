@@ -10,37 +10,59 @@ namespace Aliens.Models
     internal class Alien
     {
         // Properties
-        public bool Dead { get; set; }
-        public bool Dodging { get; set; }
-        public int Health { get; set; }
+        private bool dead;
+        private bool dodging;
+        private int health;
+
+        //Implementing appropriate getters and setters for the class
+
+        public bool Dead { get => dead; set => dead = value; }
+        public bool Dodging { get => dodging; set => dodging = value; }
+        public int Health { get => health; set => health = value; }
 
         // Class constructor
         public Alien(bool dodging, int alienHealth)
         {
-            //TODO: Construct the Alien object and initialise the data members appropriately.
+            //Initializing the data members
+            Dodging = dodging;
+            Health = alienHealth;
+            Dead = Health <= 0; //If the health is less than or equal to 0, the alien is dead
 
         }
 
         // Methods
-        //TODO: Implement appropriate getters and setters for the class
 
+        //Set dodging to true if the alien is alive//
         public void Dodge()
         {
-            //TODO: Implement the method
-            /*Set dodging to true if the alien is alive*/
+            if (!Dead)
+            {
+                Dodging = true;
+            }
+            else
+            {
+                Dodging = false;
+            }
 
         }
 
+        //Reduces the alien health by 1. Minimum Alien health should 0.//
         public void Hit()
         {
-            //TODO: Implement the method
-            /*Reduces the alien health by 1. Minimum Alien health should 0.*/
+            if (Health > 0)
+            {
+                Health--;
+            }
+            else
+            {
+                Health = 0;
+            }
         }
 
+        //Sets dodging to false//
         public void Miss()
         {
-            //TODO: Implement the method
-            /*Sets dodging to false*/
+            Dodging = false;
 
         }
 

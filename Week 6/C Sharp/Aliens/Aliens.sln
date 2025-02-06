@@ -3,12 +3,14 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aliens", "Aliens\Aliens.csproj", "{B1E584A7-60BB-4B52-91B7-F4C94D5D48B9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aliens", "Aliens\Aliens.csproj", "{B1E584A7-60BB-4B52-91B7-F4C94D5D48B9}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{CD741EC1-8BCB-46F6-8D97-25B819377695}"
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aliens.Tests", "Aliens.Tests\Aliens.Tests.csproj", "{927447A4-E37B-45E4-B129-B5043AFFACE5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,6 +22,10 @@ Global
 		{B1E584A7-60BB-4B52-91B7-F4C94D5D48B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B1E584A7-60BB-4B52-91B7-F4C94D5D48B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B1E584A7-60BB-4B52-91B7-F4C94D5D48B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{927447A4-E37B-45E4-B129-B5043AFFACE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{927447A4-E37B-45E4-B129-B5043AFFACE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{927447A4-E37B-45E4-B129-B5043AFFACE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{927447A4-E37B-45E4-B129-B5043AFFACE5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
